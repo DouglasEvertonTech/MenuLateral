@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.barra-lateral {
+    padding: 10px;
+    background: linear-gradient(90deg, #81E781, #6EE36E);
+    width: 350px;
+    height: 100dvh;
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.image-camp {
+    height: 200px;
+    width: 200px;
+    background-color: #86cac4;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#icon {
+    width: 150px;
+    height: 150px;
+}
+
+.links-barra-lateral {
+    width: 412px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.link {
+    width: 350px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #000;
+
+    padding-left: 13%;
+    font-size: 30px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #81E781;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white;
+  }
+  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
